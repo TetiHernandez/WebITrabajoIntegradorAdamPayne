@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility classes */
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Main Page */
+
+html{
+    background-color: #caf0f8;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    background-color: #025581;
+
+}
+
+/* Simple Tags */
+a:link, a:visited{
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+/* Header */
+
+.header .nav{
+    background-color: #333;
+    overflow: hidden;
+}
+
+.header .logo{
+    float: left;
+}
+
+.header .logo h1{
+    padding: 8px 15px 0 15px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.header ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.header li {
+    float: left;
+  }
+  
+.header li a {
+    display: block;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.header li a:hover {
+    background-color: #0077b6;
+  }
+
+.header li .activo{
+    background-color: #0077b6;
+}
+
+.header li:last-child{
+    margin-right: 30px;
+}
+
+.header .randomimg{
+    border: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url("https://source.unsplash.com/1600x800/?nature,people");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Formulario */
+.divform{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    padding: 70px 25px;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 40px;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+.formulario{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.group{
+    margin-bottom: 15px;
+}
+
+.group p{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.center{
+    text-align: center;
+}
+
+label{
+    padding-bottom: 10px;
+    display: block;
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 5px 10px;
+}
+
+input[type=checkbox]{
+    margin-right: 20px;
+}
+
+input[type=submit]{
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #43aa8b;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type=submit]:hover{
+    background-color: #90be6d;
+}
+
+/* Footer */
+
+.footer{
+    padding: 30px 0 ;
+    /* position: relative;
+    top: -15px; */
+    background-color: #22223b;
+    text-align: center;
+    color: #ebebeb;
+}
+
+.footer p{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.footer p a{
+    color: #ebebeb;
+}
+
+.footer p a:hover{
+    color: #fb8b24;
+}
+
+
+.footer p:last-child{
+    margin-right: none;
+}

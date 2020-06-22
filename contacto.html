@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Payne Contacto</title>
+    <script src="https://kit.fontawesome.com/f97d67ec77.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/formulario.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Adam Payne</h1>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="#" class="activo">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <img class="randomimg">
+
+    </header>
+    <main class="main">
+        <section class="formulariocontacto">
+            <div class="container">
+                <div class="divform">
+                    <h2>Contactame!</h2>
+                    <form class="formulario" name="formulario" action="" method="get">
+                        <div class="group">
+                            <label for="name">Nombre: </label>
+                            <input type="text" name="name" id="name" >
+                        </div>
+
+                        <div class="group">
+                            <label for="lastname">Apellido: </label>
+                            <input type="text" name="lastname" id="lastname" >
+                        </div>
+
+                        <div class="group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" >
+                        </div>
+
+                        <div class="group">
+                            <p>Que quieres que fotografíe:</p>  
+                            <label for="boda"><input type="checkbox" name="intereses" id="boda" value="boda">Bodas</label>
+                            <label for="cumple"><input type="checkbox" name="intereses" id="cumple" value="cumple">Cumpleaños</label>
+                            <label for="viaje"><input type="checkbox" name="intereses" id="viaje" value="viaje">Viajes</label>
+                            <label for="otros"><input type="checkbox" name="intereses" id="otros" value="otro">Otros</label>
+                        </div>
+
+                        <div class="center">
+                            <input type="submit" onclick="return validarFormulario()" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Adam Payne Fotografo &copy; - 2020</p>
+            <p><a href="index.html">Página principal</a></p>
+            <p><a href="portafolio.html">Ver portafolio</a></p>
+            <p><a target="_blank" href="https://www.facebook.com/teti2103"><i class="fab fa-facebook-square fa-2x"></i></a></p>
+            <p><a target="_blank" href="https://www.instagram.com/teti.98/?hl=es-la"><i class="fab fa-instagram fa-2x"></i></a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

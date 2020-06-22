@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #22223b;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    background-color: #457b9d;
+
+}
+
+/* Simple Tags */
+a:link, a:visited{
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+/* header */
+.header .nav{
+    background-color: #333;
+    overflow: hidden;
+}
+
+.header .logo{
+    float: left;
+}
+
+.header .logo h1{
+    padding: 8px 15px 0 15px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.header ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.header li {
+    float: left;
+  }
+  
+.header li a {
+    display: block;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.header li a:hover {
+    background-color: #0077b6;
+  }
+
+.header li .activo{
+    background-color: #0077b6;
+}
+
+.header li:last-child{
+    margin-right: 30px;
+}
+
+/* Main */
+
+/* Galeria */
+
+.galeria{
+    padding-top: 35px;
+}
+
+.container {
+    max-width: 1150px;
+    position: relative;
+    margin: auto;
+}
+
+.foto {
+    display: none;
+}
+
+.foto img{
+    width: 100%;
+}
+
+.anterior, .siguiente{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 0px 5px 5px 0;
+    user-select: none;
+    padding: 10px;
+
+}
+
+.siguiente{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover, .siguiente:hover{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.texto{
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numero{
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.circulos{
+    text-align: center;
+}
+
+.circulo{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+
+/* Galeria completa */
+.galeriacompleta{
+    padding: 70px 0 75px 0;
+    text-align: center;
+}
+
+.fotogc{    
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+    margin-right: 1%;
+    margin-bottom: 20px;
+}
+
+.fotogc img{   
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    padding: 30px 0;
+    /* position: relative;
+    top: -15px; */
+    background-color: #22223b;
+    text-align: center;
+    color: #ebebeb;
+}
+
+.footer p{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.footer p a{
+    color: #ebebeb;
+}
+
+.footer p a:hover{
+    color: #fb8b24;
+}
+
+
+.footer p:last-child{
+    margin-right: none;
+}

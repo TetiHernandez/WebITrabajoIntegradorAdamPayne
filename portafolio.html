@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f97d67ec77.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/portafolio.css">
+    <title>Adam Payne Portafolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Adam Payne</h1>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#" class="activo">Portafolio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="galeria">
+            <div class="container">
+                <div class="foto fade">
+                    <div class="numero">1/9</div>
+                    <img src="img/globo.jpg" alt="globo aeroestático">
+                    <div class="texto">Primera Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">2/9</div>
+                    <img src="img/mosca.jpg" alt="mosca">
+                    <div class="texto">Segunda Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">3/9</div>
+                    <img src="img/zorro.jpg" alt="zorro">
+                    <div class="texto">Tercera Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">4/9</div>
+                    <img src="img/caballo.jpg" alt="caballo">
+                    <div class="texto">Cuarta Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">5/9</div>
+                    <img src="img/cisnes.jpg" alt="cisnes">
+                    <div class="texto">Quinta Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">6/9</div>
+                    <img src="img/birds.jpg" alt="pajaros">
+                    <div class="texto">Sexta Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">7/9</div>
+                    <img src="img/ciervo.jpg" alt="ciervo">
+                    <div class="texto">Septima Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">8/9</div>
+                    <img src="img/frog.jpg" alt="rana">
+                    <div class="texto">Octava Foto</div>
+                </div>
+
+                <div class="foto fade">
+                    <div class="numero">9/9</div>
+                    <img src="img/mariposa.jpg" alt="mariposa">
+                    <div class="texto">Novena Foto</div>
+                </div>
+
+                <!-- Botones -->
+                <a class="anterior" onclick="navegarFoto(-1)">&#10094</a>
+                <a class="siguiente" onclick="navegarFoto(1)">&#10095</a>
+            </div>
+            <br>
+
+            <!-- Circulos para navegar fotos -->
+            <div class="circulos">
+                <span class="circulo" onclick="fotoActual(1)"></span>
+                <span class="circulo" onclick="fotoActual(2)"></span>
+                <span class="circulo" onclick="fotoActual(3)"></span>
+                <span class="circulo" onclick="fotoActual(4)"></span>
+                <span class="circulo" onclick="fotoActual(5)"></span>
+                <span class="circulo" onclick="fotoActual(6)"></span>
+                <span class="circulo" onclick="fotoActual(7)"></span>
+                <span class="circulo" onclick="fotoActual(8)"></span>
+                <span class="circulo" onclick="fotoActual(9)"></span>
+            </div>
+        </section>
+
+
+        <section class="galeriacompleta">
+            <div class="container">
+                <div class="fotogc">
+                    <img src="img/globo.jpg" onclick="fotoActual(1)" alt="globo aeroestático">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/mosca.jpg" onclick="fotoActual(2)" alt="mosca">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/zorro.jpg" onclick="fotoActual(3)" alt="zorro">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/caballo.jpg" onclick="fotoActual(4)" alt="caballo">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/cisnes.jpg" onclick="fotoActual(5)" alt="cisnes">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/birds.jpg" onclick="fotoActual(6)" alt="pajaros">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/ciervo.jpg" onclick="fotoActual(7)" alt="ciervo">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/frog.jpg" onclick="fotoActual(8)" alt="rana">
+                </div>
+
+                <div class="fotogc">
+                    <img src="img/mariposa.jpg" onclick="fotoActual(9)" alt="mariposa">
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Adam Payne Fotografo &copy; - 2020</p>
+            <p><a href="index.html">Página principal</a></p>
+            <p><a href="contacto.html">Contratar</a></p>
+            <p><a target="_blank" href="https://www.facebook.com/teti2103"><i class="fab fa-facebook-square fa-2x"></i></a></p>
+            <p><a target="_blank" href="https://www.instagram.com/teti.98/?hl=es-la"><i class="fab fa-instagram fa-2x"></i></a></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/galeria.js"></script>
+</body>
+
+</html>
